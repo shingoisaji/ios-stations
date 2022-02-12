@@ -11,14 +11,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        struct Theme {
-            static var main: UIColor  { return UIColor(named: "Main")! }
-        }
-        
-        var random: UIColor {
-            let r = CGFloat.random(in: 0...255) / 255.0
-            return UIColor(red: r, green: 1.0, blue: 1.0, alpha: 1.0)
-        }
+        view.backgroundColor = UIColor(named: "Main")
     }
 
 }
